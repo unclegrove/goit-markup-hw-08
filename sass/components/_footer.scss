@@ -10,6 +10,12 @@
     display: block;
   }
 
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: baseline;
@@ -25,6 +31,7 @@
 
   @media screen and (min-width: $desktop) {
     margin-right: 70px;
+    text-align: left;
   }
 }
 
@@ -62,6 +69,10 @@
     display: block;
     text-align: center;
     margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
   }
 }
 
@@ -120,6 +131,14 @@
   }
 }
 
+.subscription__label {
+  display: block;
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
 .subscription__text {
   display: block;
 
@@ -131,7 +150,7 @@
 }
 
 .subscription__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-left: 16px;
 
@@ -145,9 +164,6 @@
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
-  @media screen and (min-width: $mobile) {
-    width: 450px;
-  }
   @media screen and (min-width: $desktop) {
     width: 358px;
   }
