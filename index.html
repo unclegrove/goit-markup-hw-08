@@ -157,7 +157,21 @@
             <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img class="team__portret" src="./images/team/team-one.jpg" alt="Дизайнер" width="270" height="260">
+                        <picture>
+                            <source
+                            media="(min-width: 1200px)"
+                            srcset="./images/team/team-1_xl.jpg 1x, ./images/team/team-1_xl@2x.jpg 2x"
+                            >
+                            <source
+                            media="(min-width: 768px)"
+                            srcset="./images/team/team-1_m.jpg 1x, ./images/team/team-1_m@2x.jpg 2x"
+                            >
+                            <source
+                            media="(max-width: 767px)"
+                            srcset="./images/team/team-1_s.jpg 1x, ./images/team/team-1_s@2x.jpg 2x"
+                            >
+                        <img class="team__portret" src="./images/team/team-1_xl.jpg" alt="Дизайнер" width="450" height="460">
+                        </picture>
                         <div class="team__container">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p class="team__position">Product Designer</p>
@@ -194,7 +208,12 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__portret" src="./images/team/team-two.jpg" alt="Фронтент Разработчик" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/team/team-2_xl.jpg 1x, ./images/team/team-2_xl@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images/team/team-2_m.jpg 1x, ./images/team/team-2_m@2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./images/team/team-2_s.jpg 1x, ./images/team/team-2_s@2x.jpg 2x">
+                            <img class="team__portret" src="./images/team/team-2_xl.jpg" alt="Дизайнер" width="450" height="460">
+                        </picture>
                         <div class="team__container">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p class="team__position">Frontend Developer</p>
@@ -231,7 +250,12 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__portret" src="./images/team/team-three.jpg" alt="Маркетолог" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/team/team-3_xl.jpg 1x, ./images/team/team-3_xl@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images/team/team-3_m.jpg 1x, ./images/team/team-3_m@2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./images/team/team-3_s.jpg 1x, ./images/team/team-3_s@2x.jpg 2x">
+                            <img class="team__portret" src="./images/team/team-3_xl.jpg" alt="Дизайнер" width="450" height="460">
+                        </picture>
                         <div class="team__container">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p class="team__position">Marketing</p>
@@ -268,7 +292,12 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__portret" src="./images/team/team-four.jpg" alt="Веб-дизайнер" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/team/team-4_xl.jpg 1x, ./images/team/team-4_xl@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images/team/team-4_m.jpg 1x, ./images/team/team-4_m@2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./images/team/team-4_s.jpg 1x, ./images/team/team-4_s@2x.jpg 2x">
+                            <img class="team__portret" src="./images/team/team-4_xl.jpg" alt="Дизайнер" width="450" height="460">
+                        </picture>
                         <div class="team__container">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p class="team__position">UI Designer</p>
@@ -513,7 +542,7 @@
     <div class="mobile__adress">
         <ul class="mobile__adress-list">
             <li class="mobile__adress-item">
-                <a class="mobile__adress-link" href="">+38 096 111 11 11</a>
+                <a class="mobile__adress-link--blue" href="">+38 096 111 11 11</a>
             </li>
             <li class="mobile__adress-item">
                 <a class="mobile__adress-link" href="">info@devstudio.com</a>
