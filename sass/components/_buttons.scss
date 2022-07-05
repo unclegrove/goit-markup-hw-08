@@ -28,6 +28,10 @@
 
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 
+  @media screen and (max-width: 479.98px) {
+    margin-top: 20px;
+  }
+
   @media screen and (min-width: $mobile) {
     margin-top: 20px;
   }

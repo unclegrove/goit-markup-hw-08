@@ -1,27 +1,25 @@
 .hero {
-  
-    max-width: 480px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 118px;
-    padding-bottom: 118px;
+  max-width: 480px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
-    text-align: center;
+  text-align: center;
 
-    background-color: var(--bg-color-dark-blue);
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url('../images/hero/hero-img.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-color: var(--bg-color-dark-blue);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero/hero-img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  
   @media screen and (min-width: $tablet) {
     max-width: 768px;
     margin-right: auto;
@@ -62,7 +60,7 @@
   margin-left: auto;
   margin-bottom: 30px;
 
-  width: 360px;
+  max-width: 360px;
 
   color: var(--text-color-white);
   @include fonts(900, 26px, 1.61, 0.06em);

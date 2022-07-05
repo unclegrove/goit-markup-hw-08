@@ -9,6 +9,13 @@
 }
 
 .section__list {
+  @media screen and (max-width: 479.98px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+
   @media screen and (min-width: $mobile) {
     display: flex;
     flex-wrap: wrap;
@@ -35,6 +42,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
+  @media screen and (max-width: $mobile) {
+    justify-content: center;
+    align-items: center;
+  }
 
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: flex;

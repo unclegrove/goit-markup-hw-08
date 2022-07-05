@@ -78,6 +78,11 @@
 }
 
 .mobile__socials {
+  @media screen and (max-width: 479.98px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
   display: flex;
 }
 

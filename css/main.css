@@ -354,7 +354,7 @@ button {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
-  width: 360px;
+  max-width: 360px;
   color: var(--text-color-white);
   font-weight: 900;
   font-size: 26px;
@@ -809,6 +809,12 @@ button {
   background-color: var(--bg-color-dark-blue);
 }
 
+@media screen and (max-width: 479.98px) {
+  .footer-container {
+    display: block;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 480px) {
   .footer-container {
     display: block;
@@ -836,6 +842,11 @@ button {
   }
 }
 
+@media screen and (max-width: 479.98px) {
+  .adress-container {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 480px) {
   .adress-container {
     margin-right: 0;
@@ -884,6 +895,11 @@ button {
   outline: none;
 }
 
+@media screen and (max-width: 479.98px) {
+  .join {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 480px) {
   .join {
     display: block;
@@ -907,6 +923,17 @@ button {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 479.98px) {
+  .join__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+  }
+}
 @media screen and (min-width: 480px) {
   .join__list {
     display: -webkit-box;
@@ -997,7 +1024,7 @@ button {
 }
 
 .subscription__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1008,6 +1035,11 @@ button {
   background-color: var(--bg-color-dark-blue);
   outline: none;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+@media screen and (min-width: 480px) {
+  .subscription__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscription__input {
@@ -1073,8 +1105,6 @@ button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   padding: 40px;
   background-color: var(--bg-color-white);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1091,17 +1121,24 @@ button {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .modal {
-    width: calc(100% - 30px);
+    width: 450px;
+    height: 609px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .modal {
-    width: calc(100% - 318px);
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    left: 50%;
   }
 }
 
@@ -1116,6 +1153,17 @@ button {
   }
 }
 
+@media screen and (max-width: 479.98px) {
+  .section__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+}
 @media screen and (min-width: 480px) {
   .section__list {
     display: -webkit-box;
@@ -1161,6 +1209,16 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (max-width: 480px) {
+  .grid {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .grid {
@@ -1306,6 +1364,11 @@ button {
   outline: none;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 479.98px) {
+  .subscription__btn {
+    margin-top: 20px;
+  }
 }
 @media screen and (min-width: 480px) {
   .subscription__btn {
@@ -1664,6 +1727,16 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 479.98px) {
+  .mobile__socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 
 .mobile__socials-link {
