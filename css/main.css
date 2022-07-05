@@ -1679,13 +1679,6 @@ button {
   margin-bottom: 0;
 }
 
-.mobile__socials-list {
-  margin-right: 20px;
-}
-.mobile__socials-list:nth-child(4n) {
-  margin-right: 0;
-}
-
 .mobile__link {
   color: #212121;
   font-style: normal;
@@ -1727,6 +1720,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 10px;
 }
 @media screen and (max-width: 479.98px) {
   .mobile__socials {
@@ -1737,6 +1731,14 @@ button {
         flex-wrap: wrap;
     gap: 10px;
   }
+}
+
+.mobile__socials-list {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobile__socials-list:nth-child(4n) {
+  border-right: none;
 }
 
 .mobile__socials-link {

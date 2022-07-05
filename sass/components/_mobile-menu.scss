@@ -29,13 +29,6 @@
   }
 }
 
-.mobile__socials-list {
-  margin-right: 20px;
-  &:nth-child(4n) {
-    margin-right: 0;
-  }
-}
-
 .mobile__link {
   color: #212121;
   font-style: normal;
@@ -84,8 +77,17 @@
     gap: 10px;
   }
   display: flex;
+  gap: 10px;
 }
 
+.mobile__socials-list {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+  &:nth-child(4n) {
+    border-right: none;
+  }
+}
 .mobile__socials-link {
   color: var(--text-color-blue);
   font-style: normal;
