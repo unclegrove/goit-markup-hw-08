@@ -23,10 +23,19 @@
 }
 
 .features__item {
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: calc((100% - 2 * 30px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
+
     &:nth-child(2n) {
       margin-right: 0;
     }
@@ -54,6 +63,10 @@
 }
 
 .features__title {
+  @media screen and (max-width: $mobile) {
+    text-align: center;
+  }
+
   margin-bottom: 10px;
 
   color: var(--text-color-black);
