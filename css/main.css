@@ -877,6 +877,7 @@ button {
 @media screen and (min-width: 1200px) {
   .adress-container {
     margin-right: 70px;
+    margin-bottom: 0;
     text-align: left;
   }
 }
